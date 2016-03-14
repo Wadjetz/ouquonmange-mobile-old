@@ -2,39 +2,19 @@
  * Sample React Native App
  * https://github.com/facebook/react-native
  */
-'use strict';
+"use strict";
 import React, {
-  AppRegistry,
-  Text,
-  View,
-  StatusBarIOS,
-  NavigatorIOS,
-  AlertIOS
-} from 'react-native';
-import styles from './styles/styles';
-import CommunitiesList from './views/CommunitiesList';
+  AppRegistry
+} from "react-native";
 
-StatusBarIOS.setStyle('light-content')
+import Navigation from "./components/Navigation";
 
 var OuquonmangeMobile = React.createClass({
   render() {
     return (
-      <NavigatorIOS
-      style={styles.mainContainer}
-      barTintColor='#283739'
-      titleTextColor='#F7EEBB'
-      tintColor='#F7EEBB'
-      initialRoute={{
-        component: CommunitiesList,
-        title: 'Communities',
-        rightButtonTitle: 'Search',
-        onRightButtonPress: () => AlertIOS.alert(
-          'Search', 'You pressed the search button'
-        )
-      }}
-      />
+      <Navigation />
     );
   }
 });
 
-AppRegistry.registerComponent('OuquonmangeMobile', () => OuquonmangeMobile);
+AppRegistry.registerComponent("OuquonmangeMobile", () => OuquonmangeMobile);

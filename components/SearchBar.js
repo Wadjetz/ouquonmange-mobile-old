@@ -1,11 +1,11 @@
-'use strict';
+"use strict";
 
 import React, {
-  Text,
   TextInput,
   StyleSheet,
-  View
-} from 'react-native';
+  View,
+  ActivityIndicatorIOS
+} from "react-native";
 
 var SearchBar = React.createClass({
   render() {
@@ -18,7 +18,11 @@ var SearchBar = React.createClass({
           placeholder="Search"
           returnKeyType="search"
           enablesReturnKeyAutomatically={true}
-          onEndEditing={this.props.onSearch}
+          onChange={this.props.onSearch}
+        />
+        <ActivityIndicatorIOS
+          animating={this.props.isLoading}
+          style={styles.spinner}
         />
       </View>
     );
@@ -32,13 +36,16 @@ const styles = StyleSheet.create({
     marginTop: 64,
     padding: 3,
     paddingLeft: 8,
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: '#EEEEEE'
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "#EEEEEE"
   },
   searchBarInput: {
     fontSize: 15,
     flex: 1,
     height: 30
+  },
+  spinner: {
+    width: 30
   }
 });
