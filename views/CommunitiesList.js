@@ -11,7 +11,7 @@ import React, {
 import styles from '../styles/styles';
 import SearchBar from '../components/SearchBar';
 
-export default class CommunitiesList extends Component {
+var CommunitiesList = React.createClass({
   render() {
     return (
       <View style={styles.mainContainer}>
@@ -23,13 +23,13 @@ export default class CommunitiesList extends Component {
             .then(response => {
               AlertIOS.alert(
                 'Search', response
-              )
+              );
             })
             .catch(error => {
               AlertIOS.alert(
                 'Search', error
-              )
-            })
+              );
+            });
         }} />
         <Text>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiur.
@@ -38,7 +38,6 @@ export default class CommunitiesList extends Component {
     );
   }
 
-  componentWillMount() {
+});
 
-  }
-}
+export default CommunitiesList;

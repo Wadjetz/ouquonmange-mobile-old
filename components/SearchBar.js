@@ -1,14 +1,13 @@
 'use strict';
 
 import React, {
-  Component,
   Text,
   TextInput,
   StyleSheet,
   View
 } from 'react-native';
 
-export default class SearchBar extends Component {
+var SearchBar = React.createClass({
   render() {
     return (
       <View style={styles.searchBar}>
@@ -24,7 +23,9 @@ export default class SearchBar extends Component {
       </View>
     );
   }
-}
+});
+
+export default SearchBar;
 
 const styles = StyleSheet.create({
   searchBar: {
