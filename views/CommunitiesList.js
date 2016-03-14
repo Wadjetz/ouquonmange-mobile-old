@@ -1,20 +1,44 @@
 'use strict';
 
+const API_URL = "http://ouquonmange.berezovskiy.fr"
+
 import React, {
   Component,
   Text,
-  View
+  View,
+  AlertIOS
 } from 'react-native';
 import styles from '../styles/styles';
+import SearchBar from '../components/SearchBar';
 
 export default class CommunitiesList extends Component {
   render() {
     return (
-      <View style={styles.content}>
+      <View style={styles.mainContainer}>
+
+        <SearchBar onSearch={e => {
+          var query = e.nativeEvent.text;
+          fetch(`${API_URL}`)
+            .then((response) => response.text())
+            .then(response => {
+              AlertIOS.alert(
+                'Search', response
+              )
+            })
+            .catch(error => {
+              AlertIOS.alert(
+                'Search', error
+              )
+            })
+        }} />
         <Text>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiur.
         </Text>
       </View>
     );
+  }
+
+  componentWillMount() {
+
   }
 }
