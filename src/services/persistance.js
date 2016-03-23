@@ -17,3 +17,10 @@ export function getJwtToken() {
     }
   });
 }
+
+export function deleteJwtToken(callback) {
+  realm.write(() => {
+    realm.delete(realm.objects("Auth"));
+    callback();
+  });
+}

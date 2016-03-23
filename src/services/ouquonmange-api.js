@@ -1,7 +1,27 @@
 "use strict";
 
-//const API_URL = "http://ouquonmange.berezovskiy.fr";
-const API_URL = "http://localhost:9000";
+import { getJwtToken } from "./persistance";
+
+const API_URL = "http://ouquonmange.berezovskiy.fr";
+// const API_URL = "http://localhost:9000";
+// const API_URL = "http://192.168.99.100:9000";
+
+let token;
+
+function getToken() {
+  return new Promise(function(resolve, reject) {
+    if (token) {
+      resolve(token);
+    } else {
+      getJwtToken()
+        .then(jwtToken => {
+          token = jwtToken;
+          resolve(jwtToken);
+        })
+        .catch(error => reject(error));
+    }
+  });
+}
 
 function jsonSuccess(response) {
   return new Promise(function(resolve, reject) {
@@ -44,6 +64,7 @@ export function signup(newUser) {
 }
 
 export function communityList(token) {
+  // TODO getToken
   return fetch(`${API_URL}/api/community`, {
     method: "GET",
     headers: {
@@ -55,15 +76,18 @@ export function communityList(token) {
   .then(jsonSuccess);
 }
 
-export function communitySearch(token, query) {
+export function communitySearch(query) {
   const url = `${API_URL}/api/community/search${(query)?"?query="+encodeURIComponent(query):""}`;
-  return fetch(url, {
-    method: "GET",
-    headers: {
-      "Accept": "application/json",
-      "Content-Type": "application/json",
-      "Authorization": `Bearer ${token}`
-    }
-  })
-  .then(jsonSuccess);
+  // console.debug("API.communitySearch", url);
+  return getToken().then(token => {
+    return fetch(url, {
+      method: "GET",
+      headers: {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${token}`
+      }
+    })
+    .then(jsonSuccess);
+  });
 }

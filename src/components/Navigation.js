@@ -6,12 +6,13 @@ import React, {
   Navigator,
   TouchableOpacity
 } from "react-native";
+import Icon from "react-native-vector-icons/FontAwesome";
 
 import SignUpView from "../views/SignUpView";
 import LoginView from "../views/LoginView";
 import CommunitiesView from "../views/CommunitiesView";
 import CommunityDetailsView from "../views/CommunityDetailsView";
-import { realm } from "../services/persistance";
+import { deleteJwtToken } from "../services/persistance";
 
 const NavigationBarRouteMapper = {
   LeftButton(route, navigator, index, navState) {
@@ -20,14 +21,14 @@ const NavigationBarRouteMapper = {
       return null;
     }
 
-    var previousRoute = navState.routeStack[index - 1];
-
+    // var previousRoute = navState.routeStack[index - 1];
+    // {previousRoute.title}
     return (
       <TouchableOpacity
         onPress={() => navigator.pop()}
         style={styles.navBarLeftButton}>
         <Text style={[styles.navBarText, styles.navBarButtonText]}>
-          {previousRoute.title}
+          <Icon name="chevron-left" size={15} color="#FFF" />
         </Text>
       </TouchableOpacity>
     );
@@ -52,8 +53,7 @@ const NavigationBarRouteMapper = {
       return (
         <TouchableOpacity
           onPress={() => {
-            realm.write(() => {
-              realm.delete(realm.objects("Auth"));
+            deleteJwtToken(() => {
               navigator.resetTo({
                 index: "login",
                 title: "Login"
@@ -101,7 +101,7 @@ const Navigation = React.createClass({
   },
 
   renderScene(route, navigator) {
-    console.log("renderScene", route);
+    //console.log("Navigation.renderScene", route);
 
     const { index, passProps } = route;
 

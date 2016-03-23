@@ -1,10 +1,8 @@
 "use strict";
 
 import React, {
-  Text,
   View,
   StyleSheet,
-  TouchableHighlight,
   ActivityIndicatorIOS
 } from "react-native";
 import validate from "validate.js";

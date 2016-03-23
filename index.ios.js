@@ -1,18 +1,24 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- */
 "use strict";
+
 import React, {
   AppRegistry
 } from "react-native";
 
-import Navigation from "./components/Navigation";
+import { Provider } from "react-redux";
+import { createStore } from "redux";
+
+import RootReducer from "./src/reducers/RootReducer";
+
+let store = createStore(RootReducer);
+
+import Navigation from "./src/components/Navigation";
 
 var OuquonmangeMobile = React.createClass({
   render() {
     return (
-      <Navigation />
+      <Provider store={store}>
+        <Navigation />
+      </Provider>
     );
   }
 });
