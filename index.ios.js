@@ -11,7 +11,7 @@ import RootReducer from "./src/reducers/RootReducer";
 
 let store = createStore(RootReducer);
 
-import Navigation from "./src/components/Navigation";
+import Navigation from "./src/navigation/Navigation";
 
 var OuquonmangeMobile = React.createClass({
   render() {
