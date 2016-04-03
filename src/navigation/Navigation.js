@@ -3,7 +3,6 @@
 import React, {
   StyleSheet,
   Text,
-  View,
   Navigator,
   TouchableOpacity
 } from "react-native";
@@ -16,7 +15,7 @@ import CommunityDetailsView from "../views/CommunityDetailsView";
 import { deleteJwtToken } from "../services/persistance";
 
 const NavigationBarRouteMapper = {
-  LeftButton(route, navigator, index, navState) {
+  LeftButton(route, navigator, index/*, navState*/) {
 
     if (index === 0) {
       return null;
@@ -107,14 +106,14 @@ const Navigation = React.createClass({
     const { index, passProps } = route;
 
     switch (index) {
-    case "login":
-      return <LoginView {...passProps} navigator={navigator} />;
-    case "signup":
-      return <SignUpView {...passProps} navigator={navigator} />;
-    case "communities":
-      return <CommunitiesView {...passProps} navigator={navigator} />;
-    case "community_details":
-      return <CommunityDetailsView {...passProps} navigator={navigator} />;
+      case "login":
+        return <LoginView {...passProps} navigator={navigator} />;
+      case "signup":
+        return <SignUpView {...passProps} navigator={navigator} />;
+      case "communities":
+        return <CommunitiesView {...passProps} navigator={navigator} />;
+      case "community_details":
+        return <CommunityDetailsView {...passProps} navigator={navigator} />;
     }
   }
 });
