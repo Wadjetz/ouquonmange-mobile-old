@@ -12,6 +12,9 @@
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
 		00E356F31AD99517003FC87E /* OuquonmangeMobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* OuquonmangeMobileTests.m */; };
+		02575A634348477A899682CF /* libRealmReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA1CAD7DC64D449396BD95A8 /* libRealmReact.a */; };
+		04ACC39AA35D4EE08833D871 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B6AA05A2754F1D885435BD /* libRNVectorIcons.a */; };
+		11F6E13649944628A50835B2 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25186B536BDA4EB8A6C9422A /* Zocial.ttf */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
 		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
@@ -20,21 +23,16 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
-		74D785A61C9B479000B93121 /* RealmReact.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74D785901C9B3EC100B93121 /* RealmReact.framework */; };
-		74D785A71C9B479000B93121 /* RealmReact.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 74D785901C9B3EC100B93121 /* RealmReact.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		19D9F681E226430FA4ACC856 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E710E91E132467084FBA7C8 /* Foundation.ttf */; };
+		323B663AEBDF482D8417A821 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46A0B466C4E04931B1B4E69D /* FontAwesome.ttf */; };
+		4A07C43764A74FF1A4FDCDC6 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 494EF641DB864D2DB3B52B2F /* Ionicons.ttf */; };
+		63F8A25A0A95478EAF9A368A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C755CB037934AA18177899B /* libz.tbd */; };
+		73A95AF7D06646D39CFFFB55 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAA30E7BFA5941C6820EAA1E /* MaterialIcons.ttf */; };
+		7F7F3C7304174891BBA28E9D /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5C4476DCBD4E11AC7B2B9C /* libc++.tbd */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		04ACC39AA35D4EE08833D871 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B6AA05A2754F1D885435BD /* libRNVectorIcons.a */; };
+		87B6E9BF6A0D4EFB98D9DC53 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9133A812D90A4AB2B08FFF67 /* Octicons.ttf */; };
 		972A360171C844919B066C35 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC6EEE258D84AD1894EE992 /* Entypo.ttf */; };
 		AD72427DF94E4DEFA2220D70 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 136865866F4C496C9D031661 /* EvilIcons.ttf */; };
-		323B663AEBDF482D8417A821 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46A0B466C4E04931B1B4E69D /* FontAwesome.ttf */; };
-		19D9F681E226430FA4ACC856 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E710E91E132467084FBA7C8 /* Foundation.ttf */; };
-		4A07C43764A74FF1A4FDCDC6 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 494EF641DB864D2DB3B52B2F /* Ionicons.ttf */; };
-		73A95AF7D06646D39CFFFB55 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAA30E7BFA5941C6820EAA1E /* MaterialIcons.ttf */; };
-		87B6E9BF6A0D4EFB98D9DC53 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9133A812D90A4AB2B08FFF67 /* Octicons.ttf */; };
-		11F6E13649944628A50835B2 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25186B536BDA4EB8A6C9422A /* Zocial.ttf */; };
-		02575A634348477A899682CF /* libRealmReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA1CAD7DC64D449396BD95A8 /* libRealmReact.a */; };
-		7F7F3C7304174891BBA28E9D /* libc++.tbd in Resources */ = {isa = PBXBuildFile; fileRef = AB5C4476DCBD4E11AC7B2B9C /* libc++.tbd */; };
-		63F8A25A0A95478EAF9A368A /* libz.tbd in Resources */ = {isa = PBXBuildFile; fileRef = 7C755CB037934AA18177899B /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,47 +99,19 @@
 			remoteGlobalIDString = 83CBBA2E1A601D0E00E9B192;
 			remoteInfo = React;
 		};
-		74D785871C9B3EC100B93121 /* PBXContainerItemProxy */ = {
+		74AF9E2C1CB97EFB009CA22F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 74D785741C9B3EC100B93121 /* RealmJS.xcodeproj */;
+			containerPortal = 31FF5A2B47FD4216B84163F1 /* RealmReact.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = F63FF2F01C16405C00B3B8E0;
-			remoteInfo = GCDWebServers;
-		};
-		74D785891C9B3EC100B93121 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 74D785741C9B3EC100B93121 /* RealmJS.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F63FF2B11C1241E500B3B8E0;
-			remoteInfo = "RealmJS static";
-		};
-		74D7858B1C9B3EC100B93121 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 74D785741C9B3EC100B93121 /* RealmJS.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 02B58CB11AE99CEC009B348C;
-			remoteInfo = RealmJS;
-		};
-		74D7858D1C9B3EC100B93121 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 74D785741C9B3EC100B93121 /* RealmJS.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 02B58CBC1AE99CEC009B348C;
-			remoteInfo = RealmJSTests;
-		};
-		74D7858F1C9B3EC100B93121 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 74D785741C9B3EC100B93121 /* RealmJS.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 02B29A161B7CF7C9008A7E6B;
+			remoteGlobalIDString = F60690131CA2766F0003FB26;
 			remoteInfo = RealmReact;
 		};
-		74D785A81C9B479000B93121 /* PBXContainerItemProxy */ = {
+		74AF9E2F1CB97EFB009CA22F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 74D785741C9B3EC100B93121 /* RealmJS.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 02B29A151B7CF7C9008A7E6B;
-			remoteInfo = RealmReact;
+			containerPortal = 04564C9CBA6347EDB860EF8B /* RNVectorIcons.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5DBEB1501B18CEA900B34395;
+			remoteInfo = RNVectorIcons;
 		};
 		78C398B81ACF4ADC00677621 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -166,7 +136,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				74D785A71C9B479000B93121 /* RealmReact.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -183,6 +152,8 @@
 		00E356EE1AD99517003FC87E /* OuquonmangeMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OuquonmangeMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* OuquonmangeMobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OuquonmangeMobileTests.m; sourceTree = "<group>"; };
+		04564C9CBA6347EDB860EF8B /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
+		136865866F4C496C9D031661 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* OuquonmangeMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OuquonmangeMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,23 +164,20 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = OuquonmangeMobile/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = OuquonmangeMobile/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
-		74D785741C9B3EC100B93121 /* RealmJS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RealmJS.xcodeproj; path = ../node_modules/realm/RealmJS.xcodeproj; sourceTree = "<group>"; };
+		25186B536BDA4EB8A6C9422A /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		31FF5A2B47FD4216B84163F1 /* RealmReact.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RealmReact.xcodeproj; path = "../node_modules/realm/react-native/ios/RealmReact.xcodeproj"; sourceTree = "<group>"; };
+		46A0B466C4E04931B1B4E69D /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		494EF641DB864D2DB3B52B2F /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
+		7C755CB037934AA18177899B /* libz.tbd */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
-		04564C9CBA6347EDB860EF8B /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; name = "RNVectorIcons.xcodeproj"; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
-		C6B6AA05A2754F1D885435BD /* libRNVectorIcons.a */ = {isa = PBXFileReference; name = "libRNVectorIcons.a"; path = "libRNVectorIcons.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
-		CFC6EEE258D84AD1894EE992 /* Entypo.ttf */ = {isa = PBXFileReference; name = "Entypo.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		136865866F4C496C9D031661 /* EvilIcons.ttf */ = {isa = PBXFileReference; name = "EvilIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		46A0B466C4E04931B1B4E69D /* FontAwesome.ttf */ = {isa = PBXFileReference; name = "FontAwesome.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		8E710E91E132467084FBA7C8 /* Foundation.ttf */ = {isa = PBXFileReference; name = "Foundation.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		494EF641DB864D2DB3B52B2F /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		AAA30E7BFA5941C6820EAA1E /* MaterialIcons.ttf */ = {isa = PBXFileReference; name = "MaterialIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		9133A812D90A4AB2B08FFF67 /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		25186B536BDA4EB8A6C9422A /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		31FF5A2B47FD4216B84163F1 /* RealmReact.xcodeproj */ = {isa = PBXFileReference; name = "RealmReact.xcodeproj"; path = "../node_modules/realm/react-native/ios/RealmReact.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
-		CA1CAD7DC64D449396BD95A8 /* libRealmReact.a */ = {isa = PBXFileReference; name = "libRealmReact.a"; path = "libRealmReact.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
-		AB5C4476DCBD4E11AC7B2B9C /* libc++.tbd */ = {isa = PBXFileReference; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = sourcecode.text-based-dylib-definition; explicitFileType = undefined; includeInIndex = 0; };
-		7C755CB037934AA18177899B /* libz.tbd */ = {isa = PBXFileReference; name = "libz.tbd"; path = "usr/lib/libz.tbd"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = sourcecode.text-based-dylib-definition; explicitFileType = undefined; includeInIndex = 0; };
+		8E710E91E132467084FBA7C8 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		9133A812D90A4AB2B08FFF67 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		AAA30E7BFA5941C6820EAA1E /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		AB5C4476DCBD4E11AC7B2B9C /* libc++.tbd */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		C6B6AA05A2754F1D885435BD /* libRNVectorIcons.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNVectorIcons.a; sourceTree = "<group>"; };
+		CA1CAD7DC64D449396BD95A8 /* libRealmReact.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRealmReact.a; sourceTree = "<group>"; };
+		CFC6EEE258D84AD1894EE992 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,7 +192,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74D785A61C9B479000B93121 /* RealmReact.framework in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
@@ -237,8 +204,8 @@
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				04ACC39AA35D4EE08833D871 /* libRNVectorIcons.a in Frameworks */,
 				02575A634348477A899682CF /* libRealmReact.a in Frameworks */,
-				7F7F3C7304174891BBA28E9D /* libc++.tbd in Resources */,
-				63F8A25A0A95478EAF9A368A /* libz.tbd in Resources */,
+				7F7F3C7304174891BBA28E9D /* libc++.tbd in Frameworks */,
+				63F8A25A0A95478EAF9A368A /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +269,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		091F1A3AC2D8459CB5F7BEB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB5C4476DCBD4E11AC7B2B9C /* libc++.tbd */,
+				7C755CB037934AA18177899B /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		139105B71AF99BAD00B5F7CC /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -340,16 +316,35 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		74D785751C9B3EC100B93121 /* Products */ = {
+		74AF9E1D1CB97EFB009CA22F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				74D785881C9B3EC100B93121 /* libGCDWebServers.a */,
-				74D7858A1C9B3EC100B93121 /* libRealmJS.a */,
-				74D7858C1C9B3EC100B93121 /* RealmJS.framework */,
-				74D7858E1C9B3EC100B93121 /* RealmJSTests.xctest */,
-				74D785901C9B3EC100B93121 /* RealmReact.framework */,
+				74AF9E301CB97EFB009CA22F /* libRNVectorIcons.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		74AF9E1F1CB97EFB009CA22F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74AF9E2D1CB97EFB009CA22F /* libRealmReact.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		780BD1AE33F0448AAB4B9F7E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CFC6EEE258D84AD1894EE992 /* Entypo.ttf */,
+				136865866F4C496C9D031661 /* EvilIcons.ttf */,
+				46A0B466C4E04931B1B4E69D /* FontAwesome.ttf */,
+				8E710E91E132467084FBA7C8 /* Foundation.ttf */,
+				494EF641DB864D2DB3B52B2F /* Ionicons.ttf */,
+				AAA30E7BFA5941C6820EAA1E /* MaterialIcons.ttf */,
+				9133A812D90A4AB2B08FFF67 /* Octicons.ttf */,
+				25186B536BDA4EB8A6C9422A /* Zocial.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		78C398B11ACF4ADC00677621 /* Products */ = {
@@ -363,7 +358,6 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				74D785741C9B3EC100B93121 /* RealmJS.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
 				00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */,
@@ -411,32 +405,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		780BD1AE33F0448AAB4B9F7E /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				CFC6EEE258D84AD1894EE992 /* Entypo.ttf */,
-				136865866F4C496C9D031661 /* EvilIcons.ttf */,
-				46A0B466C4E04931B1B4E69D /* FontAwesome.ttf */,
-				8E710E91E132467084FBA7C8 /* Foundation.ttf */,
-				494EF641DB864D2DB3B52B2F /* Ionicons.ttf */,
-				AAA30E7BFA5941C6820EAA1E /* MaterialIcons.ttf */,
-				9133A812D90A4AB2B08FFF67 /* Octicons.ttf */,
-				25186B536BDA4EB8A6C9422A /* Zocial.ttf */,
-			);
-			name = Resources;
-			path = "";
-			sourceTree = "<group>";
-		};
-		091F1A3AC2D8459CB5F7BEB1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				AB5C4476DCBD4E11AC7B2B9C /* libc++.tbd */,
-				7C755CB037934AA18177899B /* libz.tbd */,
-			);
-			name = Frameworks;
-			path = "";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -471,7 +439,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				74D785A91C9B479000B93121 /* PBXTargetDependency */,
 			);
 			name = OuquonmangeMobile;
 			productName = "Hello World";
@@ -546,8 +513,12 @@
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
 				{
-					ProductGroup = 74D785751C9B3EC100B93121 /* Products */;
-					ProjectRef = 74D785741C9B3EC100B93121 /* RealmJS.xcodeproj */;
+					ProductGroup = 74AF9E1F1CB97EFB009CA22F /* Products */;
+					ProjectRef = 31FF5A2B47FD4216B84163F1 /* RealmReact.xcodeproj */;
+				},
+				{
+					ProductGroup = 74AF9E1D1CB97EFB009CA22F /* Products */;
+					ProjectRef = 04564C9CBA6347EDB860EF8B /* RNVectorIcons.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -615,39 +586,18 @@
 			remoteRef = 146834031AC3E56700842450 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		74D785881C9B3EC100B93121 /* libGCDWebServers.a */ = {
+		74AF9E2D1CB97EFB009CA22F /* libRealmReact.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libGCDWebServers.a;
-			remoteRef = 74D785871C9B3EC100B93121 /* PBXContainerItemProxy */;
+			path = libRealmReact.a;
+			remoteRef = 74AF9E2C1CB97EFB009CA22F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		74D7858A1C9B3EC100B93121 /* libRealmJS.a */ = {
+		74AF9E301CB97EFB009CA22F /* libRNVectorIcons.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libRealmJS.a;
-			remoteRef = 74D785891C9B3EC100B93121 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		74D7858C1C9B3EC100B93121 /* RealmJS.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RealmJS.framework;
-			remoteRef = 74D7858B1C9B3EC100B93121 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		74D7858E1C9B3EC100B93121 /* RealmJSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = RealmJSTests.xctest;
-			remoteRef = 74D7858D1C9B3EC100B93121 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		74D785901C9B3EC100B93121 /* RealmReact.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RealmReact.framework;
-			remoteRef = 74D7858F1C9B3EC100B93121 /* PBXContainerItemProxy */;
+			path = libRNVectorIcons.a;
+			remoteRef = 74AF9E2F1CB97EFB009CA22F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		78C398B91ACF4ADC00677621 /* libRCTLinking.a */ = {
@@ -736,11 +686,6 @@
 			target = 13B07F861A680F5B00A75B9A /* OuquonmangeMobile */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
-		74D785A91C9B479000B93121 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RealmReact;
-			targetProxy = 74D785A81C9B479000B93121 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -771,13 +716,13 @@
 				INFOPLIST_FILE = OuquonmangeMobileTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OuquonmangeMobile.app/OuquonmangeMobile";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OuquonmangeMobile.app/OuquonmangeMobile";
 			};
 			name = Debug;
 		};
@@ -793,13 +738,13 @@
 				INFOPLIST_FILE = OuquonmangeMobileTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OuquonmangeMobile.app/OuquonmangeMobile";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OuquonmangeMobile.app/OuquonmangeMobile";
 			};
 			name = Release;
 		};

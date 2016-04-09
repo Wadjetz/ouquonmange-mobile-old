@@ -32,11 +32,11 @@ var CommunitiesView = React.createClass({
     const { navigator } = this.props;
     this.props.onLoading(true);
     communitySearch().then(response => {
-      console.debug("CommunitiesView.componentWillMount response=", response);
+      console.log("CommunitiesView.componentWillMount response=", response);
       this.props.onLoadCommunities(this.props.communities.cloneWithRows(response));
       this.props.onLoading(false);
     }).catch(error => {
-      console.debug("CommunitiesView.componentWillMount error=", error);
+      console.log("CommunitiesView.componentWillMount error=", error);
       this.props.onLoading(false);
       navigator.resetTo({
         index: "login",
@@ -46,7 +46,7 @@ var CommunitiesView = React.createClass({
   },
 
   render() {
-    console.debug("CommunitiesView.render", this.props);
+    console.log("CommunitiesView.render", this.props);
     let content = null;
     if (this.props.communities.getRowCount() !== 0) {
       content = <CommunitiesList navigator={this.props.navigator} communities={this.props.communities} />;
@@ -93,11 +93,11 @@ var CommunitiesView = React.createClass({
     this.timeoutID = null;
     this.props.onLoading(true);
     communitySearch(query).then(response => {
-      console.debug("CommunitiesView.searchCommunities", response, this.props);
+      console.log("CommunitiesView.searchCommunities", response, this.props);
       this.props.onLoadCommunities(this.props.communities.cloneWithRows(response));
       this.props.onLoading(false);
     }).catch(error => {
-      console.debug("CommunitiesView.searchCommunities.error", error);
+      console.log("CommunitiesView.searchCommunities.error", error);
       this.props.onLoading(false);
     });
   }
