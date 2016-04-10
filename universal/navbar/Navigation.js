@@ -2,16 +2,15 @@
 
 import React, {
   PropTypes,
-  Navigator
+  Navigator,
+  StyleSheet,
+  TouchableOpacity,
+  Text
 } from "react-native";
 
-const {
-  oneOfType,
-  element,
-  arrayOf
-} = PropTypes;
+import Icon from "react-native-vector-icons/FontAwesome";
 
-import NavigationBarRouteMapper from "./NavigationBarRouteMapper";
+const { oneOfType, element, arrayOf } = PropTypes;
 
 const Navigation = React.createClass({
 
@@ -44,11 +43,84 @@ const Navigation = React.createClass({
         }}
         navigationBar={
           <Navigator.NavigationBar
-            routeMapper={NavigationBarRouteMapper}
+            routeMapper={{
+              LeftButton: LeftButton,
+              RightButton: RightButton,
+              Title: Title
+            }}
+            style={styles.navBar}
           />
         }
       />
     );
+  }
+});
+
+function LeftButton(route, navigator, index) {
+  if (index === 0) {
+    return null;
+  }
+  return (
+    <TouchableOpacity
+      onPress={() => navigator.pop()}
+      style={styles.leftButton}>
+      <Text style={[styles.navBarText, styles.navBarButtonText]}>
+        <Icon name="chevron-left" size={20} color="#FFF" />
+      </Text>
+    </TouchableOpacity>
+  );
+}
+
+function Title(route) {
+  return (
+    <Text style={styles.title}>
+      {route.title}
+    </Text>
+  );
+}
+
+function RightButton(route, navigator, index) {
+  return (
+    <TouchableOpacity
+      onPress={() => {
+        navigator.push({
+          index: "login",
+          title: "Login " + index
+        });
+      }}
+      style={styles.rightButton}>
+      <Text style={[styles.navBarText, styles.navBarButtonText]}>
+        Inscription
+      </Text>
+    </TouchableOpacity>
+  );
+}
+
+var styles = StyleSheet.create({
+  navBar: {
+    backgroundColor: "#283593",
+    height: 50
+  },
+  title: {
+    color: "#FFF",
+    fontSize: 16,
+    fontWeight: "500",
+    marginVertical: 18
+  },
+  rightButton: {
+    marginVertical: 14,
+    marginLeft: 20
+  },
+
+  leftButton: {
+    marginVertical: 16,
+    paddingRight: 10
+  },
+  navBarText: {
+    fontSize: 16
+  },
+  navBarButtonText: {
+    color: "#FFF"
   }
 });
 

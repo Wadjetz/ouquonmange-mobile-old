@@ -23,4 +23,6 @@ var OuquonmangeMobile = React.createClass({
   }
 });
 
-AppRegistry.registerComponent("OuquonmangeMobile", () => OuquonmangeMobile);
+import App from "./universal/App";
+
+AppRegistry.registerComponent("OuquonmangeMobile", () => App);
