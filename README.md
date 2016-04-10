@@ -16,3 +16,18 @@ npm install -g react-native-cli
 ```sh
 react-native run-ios
 ```
+
+### Android
+```sh
+react-native run-android
+```
+
+#### Generating the release APK
+```sh
+cd android && ./gradlew assembleRelease
+```
+
+#### Testing the release build of your app
+```sh
+cd android && ./gradlew installRelease
+```

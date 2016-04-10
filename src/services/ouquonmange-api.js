@@ -3,8 +3,8 @@
 import { getJwtToken } from "./persistance";
 
 // const API_URL = "http://ouquonmange.berezovskiy.fr";
-const API_URL = "http://localhost:9000";
-// const API_URL = "http://192.168.99.100:9000";
+// const API_URL = "http://localhost:9000";
+const API_URL = "http://192.168.99.100:9000";
 
 let token;
 

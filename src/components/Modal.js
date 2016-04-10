@@ -14,7 +14,7 @@ const _Modal = React.createClass({
     return (
       <Modal animated={true} transparent={true} visible={this.props.showCreateCommunity}>
         <View style={styles.container}>
-          <Button onPress={(e) => {
+          <Button onPress={() => {
             this.props.onShowCreateCommunity(false);
           }}>
             Close
